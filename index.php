@@ -111,7 +111,7 @@
 
 		function getData()
 		{
-			let response = fetch(getUrl);
+			let response = fetch(getUrl+'?_=' + new Date().getTime());
 			response.then(res => res.json()).then(res=>{
 				
 				items = res;
